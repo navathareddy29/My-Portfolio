@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navatha Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:white;
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111;
+    position:sticky;
+    top:0;
+}
+
+nav h1{
+    color:#ff4c60;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+}
+
+nav a:hover{
+    color:#ff4c60;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:48px;
+}
+
+.hero span{
+    color:#ff4c60;
+}
+
+.hero p{
+    margin-top:20px;
+    max-width:600px;
+    color:#ccc;
+}
+
+/* SECTIONS */
+section{
+    padding:70px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:30px;
+    color:#ff4c60;
+}
+
+/* GALLERY GRID */
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery-item{
+    position:relative;
+    overflow:hidden;
+    border-radius:10px;
+}
+
+.gallery-item img,
+.gallery-item video{
+    width:100%;
+    display:block;
+    transition:0.4s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.1);
+}
+
+/* HOVER OVERLAY */
+.overlay{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(transparent, rgba(0,0,0,0.8));
+    display:flex;
+    align-items:flex-end;
+    padding:20px;
+    opacity:0;
+    transition:0.4s;
+}
+
+.gallery-item:hover .overlay{
+    opacity:1;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111;
+    color:#aaa;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .hero h2{
+        font-size:32px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h1>Navatha</h1>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#designs">Designs</a></li>
+        <li><a href="#thumbnails">Thumbnails</a></li>
+        <li><a href="#carousels">Carousels</a></li>
+        <li><a href="#videos">Videos</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h2>Hi, I'm <span>Navatha Reddy E</span></h2>
+    <p>I create engaging content, branding visuals, and AI-powered designs that help brands grow and connect with their audience.</p>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p style="text-align:center; max-width:700px; margin:auto; color:#ccc;">
+        I am a Social Media Manager, Editor, and Graphic Designer with experience in creating engaging digital content, managing brand presence, and designing visual creatives. I also work with AI tools to generate unique visuals that enhance modern branding and storytelling.
+    </p>
+</section>
+
+<section id="experience">
+    <h2 class="section-title">Experience</h2>
+    <p style="text-align:center; max-width:700px; margin:auto; color:#ccc;">
+        Social Media Manager & Editor at
+
+
+        KALIPUTRA MISSION | 2025 – 2026
+
+
+managed and developed social media presence by creating engaging content and maintaining a consistent brand identity across platforms.
+Grew and managed social media profiles, improving reach and audience engagement
+Planned, created, and published content for Instagram and Facebook
+Edited reels, photos, and videos for high-quality digital storytelling
+Designed posters, logos, and social media creatives aligned with brand style
+Maintained consistent brand voice, visuals, and messaging across platforms
+Analyzed performance insights to improve content strategy and engagement
+    </p>
+</section>
+
+<!-- DESIGNS -->
+<section id="designs">
+    <h2 class="section-title">Designs</h2>
+    <div class="gallery">
+        <!-- Add all 18 designs here -->
+        <div class="gallery-item">
+            <img src="DESIGNS/one.jpg" alt="Design 1">
+            <div class="overlay"><h3>Design 1</h3></div>
+        </div>
+        <!-- Repeat for the rest of your 18 designs -->
+        <div class="gallery-item">
+            <img src="DESIGNS/two.jpg" alt="Design 2">
+            <div class="overlay"><h3>Design 2</h3></div>
+        </div>
+        <!-- Add all other designs similarly -->
+         <div class="gallery-item">
+            <img src="DESIGNS/three.jpg" alt="Design 1">
+            <div class="overlay"><h3>Design 3</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="DESIGNS/four.jpg" alt="Design 1">
+            <div class="overlay"><h3>Design 4</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="DESIGNS/five.jpg" alt="Design 1">
+            <div class="overlay"><h3>Design 5</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="DESIGNS/six.jpg" alt="Design 1">
+            <div class="overlay"><h3>Design 6</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="DESIGNS/seven.jpg" alt="Design 1">
+            <div class="overlay"><h3>Design 7</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="DESIGNS/eight.jpg" alt="Design 1">
+            <div class="overlay"><h3>Design 8</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="DESIGNS/nine.jpg" alt="Design 1">
+            <div class="overlay"><h3>Design 9</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="DESIGNS/ten.jpg" alt="Design 1">
+            <div class="overlay"><h3>Design 10</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="DESIGNS/eleven.jpg" alt="Design 1">
+            <div class="overlay"><h3>Design 11</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="DESIGNS/twelve.jpg" alt="Design 1">
+            <div class="overlay"><h3>Design 12</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="DESIGNS/thirteen.jpg" alt="Design 1">
+            <div class="overlay"><h3>Design 13</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="DESIGNS/forteen.jpg" alt="Design 1">
+            <div class="overlay"><h3>Design 14</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="DESIGNS/fifteen.jpg" alt="Design 1">
+            <div class="overlay"><h3>Design 15</h3></div>
+        </div>
+          <div class="gallery-item">
+            <img src="DESIGNS/seventeen.jpg" alt="Design 1">
+            <div class="overlay"><h3>Design 16</h3></div>
+        </div>
+    </div>
+</section>
+
+<!-- THUMBNAILS -->
+<section id="thumbnails">
+    <h2 class="section-title">Thumbnails</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="THUMBNAILS/THUMBNAIL1.jpg" alt="Thumbnail 1">
+            <div class="overlay"><h3>Thumbnail 1</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="THUMBNAILS/THUMBNAIL2.jpg" alt="Thumbnail 2">
+            <div class="overlay"><h3>Thumbnail 2</h3></div>
+        </div>
+        <!-- Add all other thumbnails similarly -->
+           <div class="gallery-item">
+            <img src="THUMBNAILS/THUMBNAIL3.jpg" alt="Thumbnail 2">
+            <div class="overlay"><h3>Thumbnail 3</h3></div>
+        </div>
+          <div class="gallery-item">
+            <img src="THUMBNAILS/THUMBNAIL4.jpg" alt="Thumbnail 2">
+            <div class="overlay"><h3>Thumbnail 4</h3></div>
+        </div>
+          <div class="gallery-item">
+            <img src="THUMBNAILS/THUMBNAIL5.jpg" alt="Thumbnail 2">
+            <div class="overlay"><h3>Thumbnail 5</h3></div>
+        </div>
+          <div class="gallery-item">
+            <img src="THUMBNAILS/THUMBNAIL6.jpg" alt="Thumbnail 2">
+            <div class="overlay"><h3>Thumbnail 6</h3></div>
+        </div>
+          <div class="gallery-item">
+            <img src="THUMBNAILS/THUMBNAIL7.jpg" alt="Thumbnail 2">
+            <div class="overlay"><h3>Thumbnail 7</h3></div>
+        </div>
+          <div class="gallery-item">
+            <img src="THUMBNAILS/THUMBNAIL8.jpg" alt="Thumbnail 2">
+            <div class="overlay"><h3>Thumbnail 8</h3></div>
+        </div>
+    </div>
+</section>
+
+<!-- CAROUSELS -->
+<section id="carousels">
+    <h2 class="section-title">Carousels</h2>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="CAROUSEL1/one.jpg" alt="Carousel 1 Slide 1">
+            <div class="overlay"><h3>Carousel 1</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="CAROUSEL1/two.jpg" alt="Carousel 1 Slide 2">
+            <div class="overlay"><h3>Carousel 1</h3></div>
+        </div>
+         <div class="gallery-item">
+            <img src="CAROUSEL1/three.jpg" alt="Carousel 1 Slide 3">
+            <div class="overlay"><h3>Carousel 1</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="CAROUSEL1/four.jpg" alt="Carousel 1 Slide 4">
+            <div class="overlay"><h3>Carousel 1</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="CAROUSEL1/five.jpg" alt="Carousel 1 Slide 5">
+            <div class="overlay"><h3>Carousel 1</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="CAROUSEL1/six.jpg" alt="Carousel 1 Slide 6">
+            <div class="overlay"><h3>Carousel 1</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="CAROUSEL1/seven.jpg" alt="Carousel 1 Slide 7">
+            <div class="overlay"><h3>Carousel 1</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="CAROUSEL1/eight.jpg" alt="Carousel 1 Slide 8">
+            <div class="overlay"><h3>Carousel 1</h3></div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="CAROUSEL2/one.jpg" alt="Carousel 2 Slide 1">
+            <div class="overlay"><h3>Carousel 2</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="CAROUSEL2/two.jpg" alt="Carousel 2 Slide 2">
+            <div class="overlay"><h3>Carousel 2</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="CAROUSEL2/three.jpg" alt="Carousel 2 Slide 3">
+            <div class="overlay"><h3>Carousel 2</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="CAROUSEL2/four.jpg" alt="Carousel 2 Slide 4">
+            <div class="overlay"><h3>Carousel 2</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="CAROUSEL2/five.jpg" alt="Carousel 2 Slide 5">
+            <div class="overlay"><h3>Carousel 2</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="CAROUSEL2/six.jpg" alt="Carousel 2 Slide 6">
+            <div class="overlay"><h3>Carousel 2</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="CAROUSEL2/seven.jpg" alt="Carousel 2 Slide 7">
+            <div class="overlay"><h3>Carousel 2</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="CAROUSEL2/eight.jpg" alt="Carousel 2 Slide 8">
+            <div class="overlay"><h3>Carousel 2</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="CAROUSEL2/nine.jpg" alt="Carousel 2 Slide 9">
+            <div class="overlay"><h3>Carousel 2</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="CAROUSEL2/ten.jpg" alt="Carousel 2 Slide 10">
+            <div class="overlay"><h3>Carousel 2</h3></div>
+        </div>
+        <div class="gallery-item">
+            <img src="CAROUSEL2/eleven.jpg" alt="Carousel 2 Slide 11">
+            <div class="overlay"><h3>Carousel 2</h3></div>
+        </div>
+    </div>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos">
+    <h2 class="section-title">Videos</h2>
+    <div class="gallery">
+        <!-- Add all videos here -->
+      <div class="gallery-item">
+            <video controls>
+                <source src="VIDEOS/Video1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="gallery-item">
+            <video controls>
+                <source src="VIDEOS/Video2.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="gallery-item">
+            <video controls>
+                <source src="VIDEOS/Video6.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
